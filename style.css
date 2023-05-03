@@ -287,14 +287,15 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "what I learned";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
+    height: 21rem;
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 50px 26px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -304,11 +305,15 @@ section .title::after{
 .services .serv-content .card .box{
     transition: all 0.3s ease;
 }
+.services .serv-content .card span{
+    /*font-style: italic;*/
+    font-size: 22px;
+}
 .services .serv-content .card:hover .box{
     transform: scale(1.05);
 }
 .services .serv-content .card i{
-    font-size: 50px;
+    font-size: 28px;
     color: #1d63ff;
     transition: color 0.3s ease;
 }
@@ -316,10 +321,11 @@ section .title::after{
     color: #fff;
 }
 .services .serv-content .card .text{
-    font-size: 25px;
+    font-size: 20.5px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 
 /* skills section styling */
 
@@ -369,35 +375,7 @@ section .title::after{
     font-weight: 500;
     font-size: 16px;
 }
-/*.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #1d63ff;
-}
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
-}*/
+
 
 /* teams section styling */
         
@@ -406,18 +384,8 @@ section .title::after{
     margin-bottom: -25px;
 }
 
-/*.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}*/
-
 .teams .carousel .card .portfolio-item {
     position: relative;
-    /*border-radius: 15px;*/
   }
   .teams .carousel .card .portfolio-item img {
     width: 100%;
